@@ -9,20 +9,37 @@ button, a{
     text-decoration: none;
 }
 
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(13, 13, 13, 0.73);
+    /* z-index: 1; */
+}
+
+header{
+    position: relative;
+}
+
 li{
     list-style: none;
 }
 
-nav{
+div.nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #D9D9D9;
-    padding-right: 20px;
+    padding: 0 40px;
+    z-index: 10000 !important;
+    position: relative;
 }
 
 .logo{
     width: 100px;
+    z-index: 10000;
 }
 
 .logo img{
@@ -30,7 +47,7 @@ nav{
 }
 
 ul.nav-links li{
-    display: inline-block;
+    display: inline;
     color: #292D32;
 }
 
@@ -44,6 +61,7 @@ ul.nav-links{
     /* border: 1px solid red; */
     width: 50%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -53,4 +71,143 @@ button.nav-btn{
     border-radius: 5px;
     font-size: 16px;
     padding: 5px 5px;
+    display: inline-block;
+}
+
+section.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 40px;
+    background-image: url('../images/green-business-meeting-working-room-office-building-with-bookshelf\ 1.png');
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    /* position: relative; */
+}
+
+.hero-content{
+    /* border: 1px solid red; */
+    max-width: 600px;
+    margin-top: 10px;
+}
+
+.hero-section-1, .hero-section-2{
+    z-index: 10000;
+}
+
+.hero-top-btn{
+    display: flex;
+    gap: 14px;
+}
+
+.hero-top-btn button:nth-child(1){
+    background: #031136;
+    border-radius: 8px;
+    color: #F2F2F2;
+    padding: 7px 15px;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+}
+
+.hero-top-btn button:nth-child(2){
+    background: #EB8206;
+    border-radius: 8px;
+    color: #F2F2F2;
+    padding: 7px 15px;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+}
+
+.hero-content h1{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #EB8206;
+}
+
+.hero-content p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.hero-bottom-btn{
+    margin-top: 50px;
+    /* margin-bottom: 160px; */
+}
+
+.hero-bottom-btn button{
+    background: rgba(29, 78, 216, 1);
+    color: rgba(248, 250, 252, 1);
+    border-radius: 5px;
+    padding: 5px 18px;
+    cursor: pointer;
+}
+
+.hero-section-2{
+    max-width: 667px;
+    width: 667px;
+    gap: 25px;
+    align-items: center;
+    /* border: 1px solid red; */
+    justify-content: end;
+}
+
+.section2-box{
+    /* border: 1px solid red; */
+    width: 280px;
+    max-width: 280px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section2-box .section2-box-img{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.section2-box .section2-box-img img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.section2-box-chart{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section2-box-chart:nth-child(2){
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+}
+
+.section2-box-chart:nth-child(1){
+    background: rgba(235, 130, 6, 1);
+    border-radius: 5px;
+}
+
+.section2-box-chart-content .with-count p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: rgba(41, 45, 50, 1);
+    font-size: 14px;
+}
+
+.section2-box-chart:nth-child(1) .section2-box-chart-content .with-count p span{
+    color: rgba(255, 255, 255, 1);
+}
+
+.section2-box-chart-content .with-count p span{
+    font-family: "Space Grotesk", sans-serif;
+    color: rgba(235, 130, 6, 1);
+    font-weight: 500;
+    font-size: 20px;
 }
