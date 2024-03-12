@@ -1,6 +1,6 @@
 # Maidas Tech Institute
 
-Welcome to the Maidas Tech Institute project, developed by [Taofeeq Olatigbe].
+Welcome to the Maidas Tech Institute project, developed by [Your Name].
 
 ## About
 
@@ -14,23 +14,11 @@ Maidas Tech Institute is a tech startup and coding school founded by Michael O. 
 
 ## Technologies Used
 
-- [List of technologies used in the project]
-
-## Getting Started
-
-To get started with the Maidas Tech Institute project, follow these steps:
-
-1. [Instructions on setting up the development environment]
-2. [How to install dependencies]
-3. [Any other important steps]
-
-## Usage
-
-[Provide information on how to use the project, examples, etc.]
-
-## Contributing
-
-We welcome contributions from the community! If you'd like to contribute, please follow our [contribution guidelines].
+- HTML
+- CSS
+- JavaScript
+- MySQL
+- Laravel
 
 ## Contact
 
