@@ -2,6 +2,8 @@
 
 Welcome to the Maidas Tech Institute project, developed by [Your Name].
 
+![Maidas Tech Institute Logo](url/to/your/logo.png)
+
 ## About
 
 Maidas Tech Institute is a tech startup and coding school founded by Michael O. Ojemen. Located in Akure, Ondo State, Nigeria, our institute is dedicated to providing high-quality coding education and fostering innovation in the tech industry.
