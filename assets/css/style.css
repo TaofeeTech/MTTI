@@ -211,3 +211,227 @@ section.hero{
     font-weight: 500;
     font-size: 20px;
 }
+
+/* 
+    PORTFOLIO STYLE
+*/
+
+.portfolio-counts{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+.portfolio-counts-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-inline: auto;
+    /* border: 1px solid red; */
+}
+
+.portfolio-counts-content > .portfolio{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.portfolio-counts-content > .portfolio > .portfolio-text > p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: rgba(66, 66, 66, 1);
+    font-size: 14px;
+}
+
+.portfolio-counts-content > .portfolio > .portfolio-text > p > strong{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    color: rgba(30, 30, 30, 1);
+    font-size: 18px;
+}
+
+.portfolio-counts-content > .portfolio > .portfolio-icon > i{
+    color: rgba(235, 130, 6, 1);
+    font-size: 30px;
+}
+
+/* 
+    CEO MESSG STYLE
+*/
+
+.ceo-mssg{
+    width: 100%;
+    height: 500px;
+    min-height: 500px;
+    /* border: 1px solid red; */
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.logo-underlay{
+    width: 400px;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-25%);
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 5%;
+    /* border: 1px solid green; */
+}
+
+.logo-underlay img{
+    width: 100%;
+}
+
+.parttern-underlay{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border: 1px solid yellow; */
+    opacity: 90%;
+}
+
+.parttern-underlay img{
+    width: 100%;
+}
+
+.mssg-content{
+    width: 78%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.mssg-content h2{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    color: rgba(30, 30, 30, 1);
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.mssg-content p{
+    font-family: "Open Sans", sans-serif;
+    color: rgba(66, 66, 66, 1);
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.mssg-compliment{
+    width: 78%;
+    text-align: right;
+    margin-inline: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.mssg-compliment h2{
+    color: rgba(0, 0, 0, 1);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+}
+
+.mssg-compliment p{
+    color: rgba(235, 130, 6, 1);
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}
+
+/* 
+    COURSES SHOWCASE STYLE
+*/
+
+.course-showcase{
+    width: 100%;
+    margin-top: 90px;
+}
+
+.showcase-header{
+    text-align: center;
+}
+
+.showcase-header h2{
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    color: rgba(30, 30, 30, 1);
+
+}
+
+.showcase-header h2 span{
+    background: rgba(235, 130, 6, 1);
+    color: rgba(255, 255, 255, 1);
+    Padding: 0 10px;
+}
+
+.showcase-header p{
+    font-family: "Open Sans", sans-serif;
+    color: rgba(66, 66, 66, 1);
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.course-list{
+    /* border: 1px solid red; */
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-info-main h3{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+}
+
+.course-info-main{
+    padding: 10px 10px;
+}
+
+.course-info-main p{
+    font-family: "Open Sans", sans-serif;
+    color: rgba(45, 45, 45, 1);
+    font-size: 14px;
+}
+
+.course-img{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    height: 165px;
+    max-height: 165px;
+    min-height: 165px;
+}
+
+.course-img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.course{
+    width: 300px;
+    padding: 3px;
+    box-shadow: 3px 10px 13.100000381469727px 0px rgba(46, 46, 46, 0.12);
+    border-radius: 5px;
+}
+
+.course-cover{
+    background: rgba(248, 242, 236, 1);
+    border-radius: 5px;
+    height: 100%;
+}
+
+.course-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
