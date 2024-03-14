@@ -352,7 +352,10 @@ section.hero{
 
 .course-showcase{
     width: 100%;
-    margin-top: 90px;
+    margin: 90px 0;
+    background: url('../images/Frame\ 29.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .showcase-header{
@@ -376,6 +379,7 @@ section.hero{
     font-family: "Open Sans", sans-serif;
     color: rgba(66, 66, 66, 1);
     font-weight: 400;
+    margin-bottom: 10px;
     padding-top: 10px;
 }
 
@@ -401,6 +405,7 @@ section.hero{
     font-family: "Open Sans", sans-serif;
     color: rgba(45, 45, 45, 1);
     font-size: 14px;
+    line-height: 30px;
 }
 
 .course-img{
@@ -434,4 +439,333 @@ section.hero{
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
+}
+
+.course-bottom a{
+    transition: all .2s ease;
+}
+
+.course-bottom a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgba(235, 130, 6, 1);
+}
+
+/* 
+    CTA ONE STYLE
+*/
+
+.cta_one {
+    width: 100%;
+    padding: 0 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: rgba(41, 45, 50, 1);
+    align-items: center;
+    z-index: 30;
+    /* opacity: 1; */
+}
+
+.cta-one-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../images/76108\ 1.png');
+    opacity: .1;
+}
+
+.cta_one_section1, .cta_one_section2{
+    z-index: 1000000;
+    /* border: 1px solid red; */
+}
+
+.cta_one_section1{
+    width: 30%;
+}
+
+.cta_one_section1 > .cta-one-img{
+    width: 80%;
+}
+
+.cta_one_section1 > .cta-one-img > img{
+    width: 100%;
+}
+
+.cta-one-info h3{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.cta-one-info p{
+    color: rgba(255, 255, 255, 1);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.cta-one-form{
+    background: rgba(255, 255, 255, 1);
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.cta-one-form > form > .row > .col{
+    position: relative;
+}
+
+.cta-one-form > form > .row > .col > button{
+    background-color: #EB8206;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 8px 10px;
+    color: rgba(248, 250, 252, 1);
+    float: right;
+}
+
+.cta-one-form > form > .row > .col > i{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #EB8206;
+}
+
+.cta-one-form > form > .row > .col > input{
+    border: none;
+    background: rgba(248, 242, 236, 1);
+}
+
+/* 
+    CUSTOMER REVIEW STYLE
+*/
+
+.review-section{
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-top: 50px;
+}
+
+.review-sub{
+    /* border: 1px solid firebrick; */
+    padding: 0px 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.review-img-box{
+    width: 50%;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.review-sub-img-box{
+    width: 60%;
+    margin-inline: auto;
+}
+
+.review-sub-img-box img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.review-sm{
+    display: block;
+    max-width: 200px;
+    position: absolute;
+    /* background-color: #fff; */
+    border-radius: 5px;
+    box-shadow: 5px 7px 4px 0px rgba(0, 0, 0, 0.15);
+    max-height: 70px;
+}
+
+.review-content{
+    background: rgba(248, 242, 236, 1);
+    border-radius: 5px;
+    max-width: 100%;
+    border: 2px solid #fff;
+    padding: 7px;
+    max-height: 70px;
+}
+
+.review-top{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.review-top h6{
+    font-size: 12px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+}
+
+.review-content p{
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    font-size: 9px;
+}
+
+.user-img{
+    width: 20px;
+}
+
+.user-img img{
+    width: 100%;
+}
+
+.review1{
+    top: -100%;
+    left: 12%;
+    visibility: hidden;
+    animation: rewiev1 1s linear .2s  normal forwards;
+}
+
+.review2{
+    top: -20px;
+    right: -100%;
+    visibility: hidden;
+    animation: rewiev2 1s linear .2s normal forwards;
+}
+
+.review3{
+    bottom: 30px;
+    left: -100%;
+    animation: rewiev3 1s linear .2s normal forwards;
+}
+
+.review4{
+    bottom: -20px;
+    right: -100%;
+    animation: rewiev4 1s linear .2s normal forwards;
+}
+
+@keyframes rewiev1 {
+    100%{
+        visibility: visible;
+        top: 30px;
+        left: 12%;
+    }
+}
+
+@keyframes rewiev2 {
+    100%{
+        visibility: visible;
+        top: -20px;
+        right: 60px;
+    }
+}
+
+@keyframes rewiev3 {
+    100%{
+        visibility: visible;
+        bottom: 30px;
+        left: 12%;
+    }
+}
+
+@keyframes rewiev4 {
+    100%{
+        visibility: visible;
+        bottom: -20px;
+        right: 60px;
+    }
+}
+
+.comment{
+    position: relative;
+    /* border: 1px solid red; */
+    background: rgba(242, 242, 242, 1);
+    border-radius: 5px;
+    /* padding: 20px 20px; */
+    padding-top: 20px;
+    padding-inline: 20px;
+    width: 400px;
+}
+
+.quote{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.reviews-content{
+    width: 50%;
+}
+
+.comment p.p-com{
+    font-size: 14px;
+    line-height: 26px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.comment h4{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.pi-2{
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 20px;
+}
+
+/* 
+    CTA 2 STYLEING
+*/
+
+.cta-2{
+    width: 100%;
+    background: url('../images/Rectangle\ 36.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-block: 70px;
+}
+
+.cta-2 h4{
+    color: rgba(255, 255, 255, 1);
+    font-family: "Space Grotesk", sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 35px;
+}
+
+.cta-2 p{
+    color: rgba(255, 255, 255, 1);
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 12px;
+}
+
+.cta-2-bottom{
+    width: 20%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.cta-2-bottom button{
+    background: rgba(29, 78, 216, 1);
+    color: rgba(248, 250, 252, 1);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+/* 
+    FOOTER
+*/
+
+footer{
+    background: rgba(10, 20, 47, 1);
 }
